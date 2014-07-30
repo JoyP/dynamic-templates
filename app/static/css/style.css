@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Crafty+Girls|Noto+Serif|Pacifico);
+
+* {
+}
+
+body{
+}
+
+nav{
+}
+
+h1{
+}
+
+a{
+}
+
+table {
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+table td {
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  background-size: cover;
+}
+
+/* Checker board */
+
+table tr:nth-child(even) td:nth-child(even), table tr:nth-child(odd) td:nth-child(odd){
+  background-color: white;
+}
+
+table tr:nth-child(odd) td:nth-child(odd), table tr:nth-child(even) td:nth-child(eve){
+  background-color: #575050;
+}
+
+/* Top pieces */
+table tr:nth-child(-2n+3) td:nth-child(2n-1), table tr:nth-child(2) td:nth-child(2n){
+  background-image: url(/images/red.jpg);
+}
+
+/* Bottom pieces */
+table tr:nth-child(2n+6) td:nth-child(2n), table tr:nth-child(7) td:nth-child(2n-1){
+  background-image: url(/images/black.jpg);
+}
+
+
+
