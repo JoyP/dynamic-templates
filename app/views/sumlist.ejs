@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sum List</title>
+    <link rel="stylesheet" href="/css/sumlistStyle.css">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home Page</a>
+      <a href="/checkers">Checker Board</a>
+      <a href="/add">Sum</a>
+      <a href="/sumlist">Sum List</a>
+    </nav>
+    <h1>Sum List</h1>
+    <% var col %>
+    <table>
+      <% for(i=0; i < nums.length; i++){ %>
+        <% col = (nums[i]%2) ? oddColor : evenColor %>
+        <tr>
+          <td> <%=nums[i]%> </td>
+        </tr>
+      <% } %>
+      <tr>
+        <td> <%=sum%> </td>
+    </table>
+  </body>
+</html>
+

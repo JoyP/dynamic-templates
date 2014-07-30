@@ -10,6 +10,14 @@ nav{
 }
 
 h1{
+  font-family: 'Crafty Girls', cursive;
+  font-size: 40px;
+}
+
+h2{
+  font-family: 'Crafty Girls', cursive;
+  font-color: purple;
+  padding: 10px;
 }
 
 a{

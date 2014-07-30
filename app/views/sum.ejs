@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sum</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home Page</a>
+      <a href="/checkers">Checker Board</a>
+      <a href="/add">Sum</a>
+      <a href="/sumlist">Sum List</a>
+    </nav>
+    <h1>Sum</h1>
+    <% var z = 0 %>
+    <h2 style="border: groove <%=borderwidth%>px purple;  color: <%= color %>; font-size: <%= fontsize%>;"><%= x %> + <%= y %> + <%= i %> + <%= j %> = 
+      <% z = x + y + i + j %>
+      <% var col %>
+      <% if(z%2 === 0){col = 'green' }else{col = 'red'} %>
+      <strong style="color: <%=col %>;"><%= z %></strong>
+    </h2>
+  </body>
+</html>
